@@ -58,7 +58,7 @@ __git_branch() {
 }
 
 # \h:\W \u\$
-PS1="$YELLOW[\t]$GRAY [\$(echo \$?)] \w $GREEN\$(__git_branch)$GRAY# "
+PS1="$YELLOW[\t]$GRAY [\$(echo \$?)] \h:\w $GREEN\$(__git_branch)$GRAY# "
 
 ### Bash Tab Completion
 
