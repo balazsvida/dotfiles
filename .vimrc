@@ -77,6 +77,7 @@ nnoremap <leader>gT :w<CR>:GoTest<CR>
 nnoremap <leader>gb :w<CR>:GoBuild<CR>
 nnoremap <leader>gi :w<CR>:GoInstall<CR>
 nnoremap <leader>d  :w<CR>:GoDoc<CR>
+nnoremap <leader>gr :w<CR>:GoRun<CR>
 
 
 "
