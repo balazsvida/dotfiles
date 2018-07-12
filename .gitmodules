@@ -19,3 +19,6 @@
 [submodule ".vim/pack/p/start/vim-surround"]
 	path = .vim/pack/p/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule ".vim/pack/p/start/vim-terraform"]
+	path = .vim/pack/p/start/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
