@@ -1,6 +1,5 @@
-[user]
-	name = Balazs Vida
-	email = balazs.vida@hu.ibm.com
+[include]
+	path = ~/.gitconfig.secure
 
 [alias]
 	lt = "!f() { branch=\"$1\"; shift; git rev-list --oneline --reverse --grep \"$@\" \"$branch\" --; }; f"
@@ -32,12 +31,13 @@
   interactive = auto
   status = auto
   ui = 1
+
 [push]
 	default = upstream
+
 [branch]
 	autosetuprebase = always
-[url "https://2778801fb8967bd09ed0a16b429dcf66e35b149d:x-oauth-basic@github.ibm.com/"]
-	insteadOf = https://github.ibm.com/
+
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
