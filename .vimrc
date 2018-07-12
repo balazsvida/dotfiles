@@ -79,6 +79,11 @@ nnoremap <leader>gi :w<CR>:GoInstall<CR>
 nnoremap <leader>d  :w<CR>:GoDoc<CR>
 nnoremap <leader>gr :w<CR>:GoRun<CR>
 
+"
+" Terraform
+"
+let g:terraform_align=1
+let g:terraform_fmt_on_save=1
 
 "
 "set wildignore=*.o,*.a,*.swp,*.egg-info,*.pyc,*.class,Session.vim
