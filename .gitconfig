@@ -1,0 +1,45 @@
+[user]
+	name = Balazs Vida
+	email = balazs.vida@hu.ibm.com
+
+[alias]
+	lt = "!f() { branch=\"$1\"; shift; git rev-list --oneline --reverse --grep \"$@\" \"$branch\" --; }; f"
+	pt = "!f() { branch=\"$1\"; shift; git rev-list --reverse --grep \"$@\" \"$branch\" -- | git cherry-pick --stdin; }; f"
+	ptnn = "!f() { branch=\"$1\"; shift; git rev-list --reverse --grep \"$@\" \"$branch\" -- | git cherry-pick -n --stdin; }; f"
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	lds = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+	ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+	cp = cherry-pick
+	st = status -s
+	cl = clone
+	ci = commit
+	co = checkout
+	br = branch
+	diff = diff --word-diff
+	dc = diff --cached
+	m = merge
+	p = "!f() { git pull; git submodule update; }; f"  co = checkout
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  	type = cat-file -t
+  	dump = cat-file -p
+	lg = log --color --pretty=format:'%Cred%h%Creset - %Cgreen(%ci)%C(yellow)%d%Creset %s %C(bold blue)<%an> %Creset%Cgreen(%cr)%Creset' --abbrev-commit
+	lgg = log --color --graph --pretty=format:'%Cred%h%Creset - %Cgreen(%ci)%C(yellow)%d%Creset %s %C(bold blue)<%an> %Creset%Cgreen(%cr)%Creset' --abbrev-commit
+	ticket = "!f() { match=\"$1\"; git log --pretty=format:\"%h\" --grep \"$match\" | xargs -L1 git describe --contains --tags | sed 's/[~\\^].*//g' | sort | uniq; }; f"
+
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = 1
+[push]
+	default = upstream
+[branch]
+	autosetuprebase = always
+[url "https://2778801fb8967bd09ed0a16b429dcf66e35b149d:x-oauth-basic@github.ibm.com/"]
+	insteadOf = https://github.ibm.com/
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
