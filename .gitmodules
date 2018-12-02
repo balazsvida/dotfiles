@@ -22,3 +22,6 @@
 [submodule ".vim/pack/p/start/vim-terraform"]
 	path = .vim/pack/p/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule ".vim/pack/p/start/wmgraphviz.vim"]
+	path = .vim/pack/p/start/wmgraphviz.vim
+	url = https://github.com/wannesm/wmgraphviz.vim.git

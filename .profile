@@ -22,6 +22,7 @@ PATH=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
 PATH=$HOME/node_modules/.bin:$PATH # json2csv
 PATH=$HOME/d/go/bin:$PATH
 PATH=$HOME/bin:$PATH
+PATH=/opt/homebrew/bin:$PATH
 
 # Go Workshop by Francesc Campoy
 # PATH=$HOME/src/go_appengine:$PATH
@@ -75,3 +76,4 @@ fi
 if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
+

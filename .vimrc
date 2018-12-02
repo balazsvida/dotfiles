@@ -29,6 +29,9 @@ set hlsearch "<C-l> turns off see:vim-sensible
 
 let mapleader = ","
 
+nnoremap <leader>, :
+nnoremap <leader>s :w<CR>
+
 "
 " Fuzzy Search everywhere
 "
@@ -50,7 +53,8 @@ let g:fzf_colors =
 
 nnoremap <leader>t :Ag!<Space>
 nnoremap <leader>f :Files<CR>
-nnoremap <leader>b :BTags<Space>
+nnoremap <leader>b :Buffers<CR>
+nnoremap <leader>l :BLines<CR>
 
 " Augmenting Ag command using fzf#vim#with_preview function
 "   * fzf#vim#with_preview([[options], preview window, [toggle keys...]])
@@ -79,11 +83,18 @@ nnoremap <leader>gi :w<CR>:GoInstall<CR>
 nnoremap <leader>d  :w<CR>:GoDoc<CR>
 nnoremap <leader>gr :w<CR>:GoRun<CR>
 
+"let g:go_fmt_autosave = 0 " Testing gofmt
+
 "
 " Terraform
 "
 let g:terraform_align=1
-let g:terraform_fmt_on_save=1
+let g:terraform_fmt_on_save=0
+
+"
+" Crontab
+"
+autocmd filetype crontab setlocal nobackup nowritebackup " avoid issues: crontab: temp file must be edited in place
 
 "
 "set wildignore=*.o,*.a,*.swp,*.egg-info,*.pyc,*.class,Session.vim
