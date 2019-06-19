@@ -12,6 +12,8 @@ export EDITOR=/usr/local/bin/vim
 export GOPATH=$HOME 		# go requires 'export'
 # GOBIN=$HOME/bin 		# implicit of GOPATH=$HOME
 
+export VAULT_FORMAT=json
+
 ### Bash Path
 
 # start with lowest precedence
@@ -59,7 +61,8 @@ __git_branch() {
 }
 
 # \h:\W \u\$
-PS1="$YELLOW[\t]$GRAY [\$(echo \$?)] \h:\w $GREEN\$(__git_branch)$GRAY# "
+#PS1="$YELLOW[\t]$GRAY [\$(echo \$?)] \h:\w $GREEN\$(__git_branch)$GRAY# "
+PS1="[\t] [\$(echo \$?)] \h:\w \$(__git_branch)# "
 
 ### Bash Tab Completion
 

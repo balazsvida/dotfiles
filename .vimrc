@@ -7,7 +7,7 @@
 
 set termguicolors
 set background=dark
-colorscheme one
+"colorscheme one
 
 set relativenumber
 set number
