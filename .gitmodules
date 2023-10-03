@@ -1,33 +1,33 @@
-[submodule ".vim/pack/p/start/YouCompleteMe"]
-	path = .vim/pack/p/start/YouCompleteMe
+[submodule "config/vim/pack/p/start/YouCompleteMe"]
+	path = config/vim/pack/p/start/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
-[submodule ".vim/pack/p/start/fzf.vim"]
-	path = .vim/pack/p/start/fzf.vim
+[submodule "config/vim/pack/p/start/fzf.vim"]
+	path = config/vim/pack/p/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim.git
-[submodule ".vim/pack/p/start/vim-go"]
-	path = .vim/pack/p/start/vim-go
+[submodule "config/vim/pack/p/start/vim-go"]
+	path = config/vim/pack/p/start/vim-go
 	url = https://github.com/fatih/vim-go.git
-[submodule ".vim/pack/p/start/vim-one"]
-	path = .vim/pack/p/start/vim-one
+[submodule "config/vim/pack/p/start/vim-one"]
+	path = config/vim/pack/p/start/vim-one
 	url = https://github.com/rakr/vim-one.git
-[submodule ".vim/pack/p/start/vim-repeat"]
-	path = .vim/pack/p/start/vim-repeat
+[submodule "config/vim/pack/p/start/vim-repeat"]
+	path = config/vim/pack/p/start/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
-[submodule ".vim/pack/p/start/vim-sensible"]
-	path = .vim/pack/p/start/vim-sensible
+[submodule "config/vim/pack/p/start/vim-sensible"]
+	path = config/vim/pack/p/start/vim-sensible
 	url = https://github.com/tpope/vim-sensible.git
-[submodule ".vim/pack/p/start/vim-surround"]
-	path = .vim/pack/p/start/vim-surround
+[submodule "config/vim/pack/p/start/vim-surround"]
+	path = config/vim/pack/p/start/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule ".vim/pack/p/start/vim-terraform"]
-	path = .vim/pack/p/start/vim-terraform
+[submodule "config/vim/pack/p/start/vim-terraform"]
+	path = config/vim/pack/p/start/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
-[submodule ".vim/pack/p/start/wmgraphviz.vim"]
-	path = .vim/pack/p/start/wmgraphviz.vim
+[submodule "config/vim/pack/p/start/wmgraphviz.vim"]
+	path = config/vim/pack/p/start/wmgraphviz.vim
 	url = https://github.com/wannesm/wmgraphviz.vim.git
-[submodule ".vim/pack/p/start/vim-sleuth"]
-	path = .vim/pack/p/start/vim-sleuth
+[submodule "config/vim/pack/p/start/vim-sleuth"]
+	path = config/vim/pack/p/start/vim-sleuth
 	url = https://github.com/tpope/vim-sleuth.git
-[submodule ".vim/pack/p/start/vim-fugitive"]
-	path = .vim/pack/p/start/vim-fugitive
+[submodule "config/vim/pack/p/start/vim-fugitive"]
+	path = config/vim/pack/p/start/vim-fugitive
 	url = https://github.com/tpope/vim-fugitive.git
