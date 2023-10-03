@@ -1,4 +1,6 @@
-### Shared Source
+export BASH_SILENCE_DEPRECATION_WARNING=1
+
+## Shared Source
 
 for src in .profile.secure; do 
 	if [ -f $src ]; then
@@ -20,11 +22,14 @@ export VAULT_FORMAT=json
 PATH=/usr/bin:$PATH
 PATH=/usr/local/bin:$PATH
 PATH=/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:$PATH
+PATH=$HOME/d/platform-tools:$PATH
 
 PATH=$HOME/node_modules/.bin:$PATH # json2csv
 PATH=$HOME/d/go/bin:$PATH
 PATH=$HOME/bin:$PATH
 PATH=/opt/homebrew/bin:$PATH
+#PATH=/usr/local/lib/python2.7/site-packages/:$PATH
+PATH=/usr/local/opt/python@3.10/libexec/bin:$PATH
 
 # Go Workshop by Francesc Campoy
 # PATH=$HOME/src/go_appengine:$PATH
@@ -80,3 +85,4 @@ if [ -f ~/.bashrc ]; then
 	source ~/.bashrc
 fi
 
+. /Users/b/.profabevjava
