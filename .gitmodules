@@ -25,3 +25,18 @@
 [submodule "config/vim/vim-sleuth.git"]
 	path = config/vim/pack/p/start/vim-sleuth.git
 	url = https://github.com/tpope/vim-sleuth.git
+[submodule "config/vim/pack/p/start/fugitive-gitlab.vim.git"]
+	path = config/vim/pack/p/start/fugitive-gitlab.vim.git
+	url = https://github.com/shumphrey/fugitive-gitlab.vim.git
+[submodule "config/vim/pack/p/start/supertab.git"]
+	path = config/vim/pack/p/start/supertab.git
+	url = https://github.com/ervandew/supertab.git
+[submodule "config/vim/pack/p/start/jedi-vim.git"]
+	path = config/vim/pack/p/start/jedi-vim.git
+	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "config/vim/pack/p/start/vim-rhubarb.git"]
+	path = config/vim/pack/p/start/vim-rhubarb.git
+	url = https://github.com/tpope/vim-rhubarb.git
+[submodule "config/vim/pack/p/start/ale.git"]
+	path = config/vim/pack/p/start/ale.git
+	url = https://github.com/dense-analysis/ale.git
