@@ -1,27 +1,27 @@
 [submodule "config/vim/vim-fugitive.git"]
-	path = config/vim/vim-fugitive.git
+	path = config/vim/pack/p/start/vim-fugitive.git
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "config/vim/fzf.vim.git"]
-	path = config/vim/fzf.vim.git
+	path = config/vim/pack/p/start/fzf.vim.git
 	url = https://github.com/junegunn/fzf.vim.git
 [submodule "config/vim/vim-go.git"]
-	path = config/vim/vim-go.git
+	path = config/vim/pack/p/start/vim-go.git
 	url = https://github.com/fatih/vim-go.git
 [submodule "config/vim/vim-repeat.git"]
-	path = config/vim/vim-repeat.git
+	path = config/vim/pack/p/start/vim-repeat.git
 	url = https://github.com/tpope/vim-repeat.git
 [submodule "config/vim/vim-sensible.git"]
-	path = config/vim/vim-sensible.git
+	path = config/vim/pack/p/start/vim-sensible.git
 	url = https://github.com/tpope/vim-sensible.git
 [submodule "config/vim/vim-surround.git"]
-	path = config/vim/vim-surround.git
+	path = config/vim/pack/p/start/vim-surround.git
 	url = https://github.com/tpope/vim-surround.git
 [submodule "config/vim/vim-terraform.git"]
-	path = config/vim/vim-terraform.git
+	path = config/vim/pack/p/start/vim-terraform.git
 	url = https://github.com/hashivim/vim-terraform.git
 [submodule "config/vim/wmgraphviz.vim.git"]
-	path = config/vim/wmgraphviz.vim.git
+	path = config/vim/pack/p/start/wmgraphviz.vim.git
 	url = https://github.com/wannesm/wmgraphviz.vim.git
 [submodule "config/vim/vim-sleuth.git"]
-	path = config/vim/vim-sleuth.git
+	path = config/vim/pack/p/start/vim-sleuth.git
 	url = https://github.com/tpope/vim-sleuth.git
