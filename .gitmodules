@@ -40,3 +40,6 @@
 [submodule "config/vim/pack/p/start/ale.git"]
 	path = config/vim/pack/p/start/ale.git
 	url = https://github.com/dense-analysis/ale.git
+[submodule "config/vim/pack/p/start/vim-colors-solarized.git"]
+	path = config/vim/pack/colors/start/vim-colors-solarized.git
+	url = https://github.com/altercation/vim-colors-solarized.git

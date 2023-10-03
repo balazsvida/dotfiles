@@ -2,10 +2,17 @@
 " Theme
 "
 
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
+let g:solarized_italic=1
+let g:solarized_bold=1
+let g:solarized_underlined=1
+let g:solarized_contrast="high"
+let g:solarized_visibility="low"
 
-"set termguicolors
+set list " show whitespaces (plugin vim-sensitive does the same)
+syntax enable
 set background=dark
+colorscheme solarized
 
 set relativenumber
 set number
@@ -28,7 +35,6 @@ set hlsearch "<C-l> turns off see:vim-sensible
 let mapleader = ","
 
 nnoremap <leader>, :
-nnoremap <leader>s :w<CR>
 
 "
 " Fuzzy Search everywhere
@@ -93,6 +99,33 @@ let g:terraform_fmt_on_save=0
 " Crontab
 "
 autocmd filetype crontab setlocal nobackup nowritebackup " avoid issues: crontab: temp file must be edited in place
+
+" Source private vimrc
+"runtime private.vimrc
+
+"
+" Python
+"
+filetype plugin indent on
+
+let g:jedi#use_splits_not_buffers="right"
+
+command! Isort execute ':silent !isort --profile black %' | execute ':redraw!'
+au BufWritePost *.py :ALEFix
+au BufWritePost *.py :Isort
+
+let g:ale_linters = {
+      \'python': ['pylint', 'mypy'],
+      \}
+
+let g:ale_fixers = {
+      \ 'python': ['pycln'],
+      \}
+
+let g:ale_virtualtextcursor = 'disabled'
+"let g:ale_fix_on_save = 1
+
+
 
 "
 "set wildignore=*.o,*.a,*.swp,*.egg-info,*.pyc,*.class,Session.vim
