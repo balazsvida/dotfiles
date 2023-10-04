@@ -39,7 +39,11 @@ nnoremap <leader>, :
 "
 " Fuzzy Search everywhere
 "
-set rtp+=/usr/local/opt/fzf " needs to be installed see https://github.com/junegunn/fzf
+if $FZF_HOME == ""
+  let $FZF_HOME = '/usr/local/opt/fzf'
+endif
+set rtp+=$FZF_HOME " needs to be installed see https://github.com/junegunn/fzf
+
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],
