@@ -1,2 +1,2 @@
 [MESSAGE CONTROL]
-disable=missing-module-docstring, missing-function-docstring, broad-exception-raised, broad-exception-caught
+disable=missing-module-docstring, missing-function-docstring, broad-exception-raised, broad-exception-caught, too-few-public-methods
