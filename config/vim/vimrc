@@ -127,40 +127,10 @@ let g:ale_fixers = {
       \}
 
 let g:ale_virtualtextcursor = 'disabled'
+let g:ale_sign_column_always = '1'
 "let g:ale_fix_on_save = 1
 
-
-
-"
-"set wildignore=*.o,*.a,*.swp,*.egg-info,*.pyc,*.class,Session.vim
-"set noswapfile nobackup
-"set noeol binary "do not leave an empty line at the end of file"
-"set previewheight=20
-"set ignorecase smartcase
-""set fileformats=unix,dos,mac
-"set hidden visualbell
-"set linebreak
-"let g:auto_save=0
-"set hlsearch
-"set splitright
-"set nowrap breakindent
-"set tags=./tags;$HOME
-"
-"set mouse=a
-""set termguicolors
-"filetype plugin on
-"let g:go_fmt_command = "goimports"
-"let g:go_list_type = "quickfix"
-"autocmd FileType go nmap <leader>r  <Plug>(go-run)
-"autocmd FileType go nmap <Leader>i <Plug>(go-info)
-"au FileType crontab setlocal bkc=yes
-"let g:CommandTTagIncludeFilenames = 1
-"let g:CommandTFileScanner = "git"
-"let g:CommandTGitScanSubmodules = 1
-"
-"nmap <silent> <leader>f <Plug>(CommandT)
-"
-"let g:ackprg = 'ag --nogroup --nocolor --column'
-"cnoreabbrev Ack Ack!
-"nnoremap <Leader>a :Ack!<Space>
+if filereadable(expand('~/.vimrcprivate'))
+  source ~/.vimrcprivate
+endif
 
