@@ -8,10 +8,7 @@ After cloning this repo, the submodules need to be updated:
 
 	git submodule update --init --recursive
 
-Create symlink from files and folders in this repo to your home `~` directory.
+Copy config files to your home folder
 	
 	./install.sh --all
 
-
-
-	
